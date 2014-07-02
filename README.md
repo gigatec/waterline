@@ -10,6 +10,17 @@ Waterline strives to inherit the best parts of ORMs like ActiveRecord, Hibernate
 
 For detailed documentation, go to [Waterline Documentation](https://github.com/balderdashy/waterline-docs) repository.
 
+## gigatec Adjustments
+
+Custom JOIN + WHERE Support/Hack.
+
+```javascript
+Table1.find(null, {
+  join_sql: [ 'LEFT JOIN table2 ON table2.id = table1.id', 'LEFT JOIN table3 ON table2.id = table1.id' ],
+  where_sql: [ 'table2.active = 1', 'table3.enabled = 1' ]
+})
+```
+
 ## Installation
 
 Install from NPM.
