@@ -12,7 +12,7 @@ For detailed documentation, go to [Waterline Documentation](https://github.com/b
 
 ## gigatec Adjustments
 
-Custom JOIN + WHERE Support/Hack.
+Custom JOIN + WHERE Support/Hack (gigatec/sails-mysql needed).
 
 ```javascript
 Table1.find(null, {
